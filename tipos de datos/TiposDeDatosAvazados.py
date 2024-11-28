@@ -88,7 +88,7 @@ print(f"El tipo de conjunto es:")
 -----------------------------------------------------------------------------------------------------
 
 
-Diccionarios
+--------------------------------------------------Diccionarios
 
 
 Los diccionarios en Python, representados por el tipo dict, son colecciones desordenadas de
@@ -96,7 +96,129 @@ pares clave-valor. Cada clave es única y se utiliza para acceder a su valor aso
 utilizando llaves { } con pares separados por dos puntos (clave: valor).
 Ejemplo de uso de variables de tipo dict
 
+los diccionarios necesitamos colocar la clave de acceso al valor para poder acceder
+
+
+diccionario = {"nombre" : "Juan paco",  #RPimero va la clave y luego el contenido, ponte vrga
+               "edad" : 29,
+               "ciudad" : "merida"}
+
+print (f"nombre : {diccionario["nombre"]}")
+print (f"y tiene  : {diccionario["edad"]} años")
+print (f"vive en : {diccionario["ciudad"]}")
+print (f"El tipo de diccionario es : {type(diccionario)}")
+
+
+persona = {
+    "nombre": "Jorge",
+    "edad": 29,
+    "estatura " : 1.70,
+    "estudiando" : True,    
+}
+
+print(f"El tipo de valor asociado a la clave nombre es : {type(persona['nombre'])}")
+print(f"El tipo de valor asociado a la clave edad es : {type(persona['edad'])}")
+print(f"El tipo de valor asociado a la clave estatura es : {type(persona['estatura '])}")
+print(f"El tipo de valor asociado a la clave estudiando es : {type(persona['estudiando'])}")
+
+
+
+
+
+
+
+
+---------------------------------Casting---------------------------------
+El casting en Python se refiere a la conversión de una variable de un tipo de dato a otro. Esto
+se puede hacer de manera explícita utilizando las funciones de casting incorporadas. Es útil
+cuando necesitas convertir un tipo de dato para realizar ciertas operaciones que requieren ese
+tipo específico.
+Funciones Comunes de Casting en Python:
+
+• int( ) : Convierte un valor a un entero
+• float( ) : Convierte un valor a un número de punto flotante
+• str( ) : Convierte un valor a una cadena de caracteres
+• bool( ) : Convierte un valor a un booleano
+• list( ) : Convierte un valor a una lista
+• tuple( ) : Convierte un valor a una tupla
+• set( ) : Convierte un valor a un conjunto
+• dict( ) : Convierte un valor a un diccionario
+
+
+
+
+
 """
+#Ejemplo 1: Convertir cadena a entero
+
+
+
+cadena = "123"
+
+numero_entero = int(cadena)
+
+print(f"El valor de numero entero es : {numero_entero} y su tipo es {type(numero_entero)}")
+
+
+
+
+#convertir entero a flotante
+
+numero_ent = 10
+
+numero_flotante = float(numero_ent)
+
+print(f"El valor de numero flotante es : {numero_flotante} y su tipo es {type(numero_flotante)}")
+
+
+#convertir flotante a cadena
+
+numero_float = 123.456
+
+cadena = str(numero_float)
+
+print(f"El valor de cadena es : {cadena} y su tipo es {type(cadena)}")
+
+
+#convertir numeor a booleano
+
+num = 2 # el unico valor que resultara false es el 0
+booleano = bool(num)
+
+print(f"El valor de booleano es : {booleano} y su tipo es {type(booleano)}")
+
+
+#convertir cadena a lista
+
+cadena = "hola"
+lista = list(cadena)
+print(f"El valor de lista es : {lista} y su tipo es {type(lista)}")
+
+#convertir lista a tupla
+
+lista = [1,2,3]
+
+tupla = tuple(lista)
+
+print(f"El valor de tupla es : {tupla} y su tipo es {type(tupla)}")
+
+
+# convertir lista a conjunto
+
+lista = [1,2,3]
+
+conjunt = set(lista)
+
+print(f"El valor de conjunto es : {conjunt} y su tipo es {type(conjunt)}")
+
+
+#convertir lista de tuplas a diccionario
+
+tuplas_list = [("clave1", "valor1"),("clave2", "valor2"),("clave3", "valor3")]
+
+diccionario = dict(tuplas_list)
+
+print(f"El valor de diccionario es : {diccionario} y su tipo es {type(diccionario)}")
 
 
 
