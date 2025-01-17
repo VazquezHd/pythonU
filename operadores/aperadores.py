@@ -172,6 +172,9 @@ print(f"a %= 2 = {a}")
 
 
 Operadores de comparación
+
+
+
 Se usan para comparar dos valores:
 • Igual a : ==
 – Ejemplo: a == b (Compara si a es igual a b. Si son iguales, se obtiene un True. Si
@@ -192,5 +195,86 @@ obtiene un True. Si a es menor a b, se obtiene un False)
 – Ejemplo: a <= b (Compara si a es menor o igual a b. Si a es menor o igual a b, se
 obtiene un True. Si a es mayor a b, se obtiene un False)
 
-"""
+a = 5
+b = 3
 
+# igual a
+
+c = a == b
+#es para ver si los 2 son iguales, como uno es 5 y otro es 3, no son iguales, va a retornar un false
+print(f"a == b = {c}")
+
+#no igual a
+
+c = a != b
+#es para ver si los 2 son diferentes con el signo de  !, como uno es 5 y otro es 3, no son iguales, va a retornar un true
+print(f"a != b = {c}")
+
+#mayor que
+
+c = a > b
+#es para ver si a es mayor a b, como a es 5 y b es 3, si es mayor, va a retornar un true
+print(f"a > b = {c}")
+
+#menor que
+
+c = a < b
+#es para ver si b es mayor a a, como a es 5 y b es 3, no es mayor, va a retornar un false
+print(f"a < b = {c}")
+
+
+#mayor o igual que
+
+c = a >= b
+#es para ver si a es mayor o igual a b, como a es 5 y b es 3, si es mayor, va a retornar un true
+print(f"a >= b = {c}")
+
+#menor o igual que
+
+c = a <= b
+#es para ver si a es mayor o igual a b, como a es 5 y b es 3, si es mayor, va a retornar un true
+print(f"a <= b = {c}")
+
+
+
+
+
+
+
+
+Operadores lógicos
+
+
+Se usan para comparar dos valores:
+
+• and : Devuelve True si dos declaraciones son verdaderas
+– Ejemplo: c = a and b (Si a=True y b=True, c es True. si a o b son diferentes de
+True, c es False)
+
+• or : Devuelve True si una de las declaraciones es verdadera
+– Ejemplo: c = a or b (Si a=True o b=True, c es True. Si a y b son False, c es False)
+
+• not : Invierte el valor booleano
+– Ejemplo: c = not a (Si a=True, c=False. Si a=False, c=True)
+
+"""
+a = True
+b = False
+print (f"a = {a}")
+print (f"b = {b}")
+
+#and
+#como una de las 2 es false, entonces c es false (si una de las 2 declaraciones es falsa, pasa a ser falso c, tienen que ser las 2 true)
+c = a and b
+print (f"a and b = {c}")
+
+#or
+#si una de las 2 variables es tru, en ese caso, c se convierte en true, tiene que cumplirse al menos una declaracion
+c = a or b
+print (f"a and b = {c}")
+
+
+#not
+#esta solo reinvierte
+c = not a
+print (f"not a = {c}")
